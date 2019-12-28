@@ -15,8 +15,8 @@ class DayTemperature extends Component {
         this.styles = {
             light: {
                 fontWeight: 100,
-                backgroundColor: "rgb(218,83,103,1)",
-                color: "white",
+                backgroundColor: "rgb(230,230,230,1)",
+                color: "black",
                 borderRadius: '0.2em',
                 border: 'none',
             }
@@ -34,10 +34,12 @@ class DayTemperature extends Component {
 
    
     render() {
+        //responsive
+        const {xs, sm, md, xl, lg} = this.props;
 
         return(
         <Col id={'lastWidget-wrapper'}
-                 xs={6} sm={6} md={4} xl={4} lg={4}
+                 xs={xs} sm={sm} md={md} xl={xl} lg={lg}
                  className={"my-3"}
             >
                 <Col id={'last-widget'}

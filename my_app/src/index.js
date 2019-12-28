@@ -14,8 +14,13 @@ class Index extends React.Component{
 		return (
 
 			<Row id={"widgets-wrapper"}>
-                        <DayTemperature/>
-                        <DayTemperature/>
+				<DayTemperature xs={12} sm={12} md={12} lg={12}/>
+                <DayTemperature xs={6} sm={6} md={4} lg={4}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4}/>
             </Row>
 		  );
 	}
