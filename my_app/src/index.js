@@ -25,12 +25,12 @@ class Index extends React.Component{
 				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'minimum temperature'} color={'rgb(130,130,130,1)'}/>
 				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'maximum temperature'} color={'rgb(130,130,130,1)'}/>
 				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'average temperature'} color={'rgb(130,130,130,1)'}/>
-                <DayTemperature xs={6} sm={6} md={4} lg={4} message={'yesterday'}/>
-				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'two days ago'}/>
-				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'three days ago'}/>
-				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'four days ago'}/>
-				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'five days ago'}/>
-				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'six days ago'}/>
+                <DayTemperature xs={3} sm={3} md={2} lg={2} message={'yesterday'}/>
+				<DayTemperature xs={3} sm={3} md={2} lg={2} message={'two days ago'}/>
+				<DayTemperature xs={3} sm={3} md={2} lg={2} message={'three days ago'}/>
+				<DayTemperature xs={3} sm={3} md={2} lg={2} message={'four days ago'}/>
+				<DayTemperature xs={3} sm={3} md={2} lg={2} message={'five days ago'}/>
+				<DayTemperature xs={3} sm={3} md={2} lg={2} message={'six days ago'}/>
             </Row>
 		</div>
 		  );
