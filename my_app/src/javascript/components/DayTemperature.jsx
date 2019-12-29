@@ -36,6 +36,7 @@ class DayTemperature extends Component {
     render() {
         //responsive
         const {xs, sm, md, xl, lg} = this.props;
+        const {message} = this.props;
 
         return(
         <Col id={'lastWidget-wrapper'}
@@ -45,7 +46,7 @@ class DayTemperature extends Component {
                 <Col id={'last-widget'}
                      style={this.styles.light}
                      className={"p-3 shadow-shorter"}>
-                    <h1 className={"t-size-1-5 fw-600 mb-3"}>Hier <span className={'fw-300 t-size-0-9 font-italic'}><br/></span></h1>
+                    <h1 className={"t-size-1-5 fw-600 mb-3"}>{message}<span className={'fw-300 t-size-0-9 font-italic'}><br/></span></h1>
                     <Row className={'justify-content-center'}>
                         <h2 className={"t-size-4 fw-100 font-italic text-center m-0"}>
                             43°C
