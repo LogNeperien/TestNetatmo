@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Col, Container, Row} from "react-bootstrap";
 import DayTemperature from "../src/javascript/components/DayTemperature";
 import Header from "../src/javascript/components/Header";
+import ButtonStation from "../src/javascript/components/ButtonStation";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './stylesheets/App.css';
@@ -16,6 +17,8 @@ class Index extends React.Component{
 		
 		<div>
 			<Header message={'STATION METEO NUMERO 15'}/>
+
+			<ButtonStation/>
 
 			<Row id={"widgets-wrapper"}>
 				<DayTemperature xs={12} sm={12} md={12} lg={12} message={'today'}/>
