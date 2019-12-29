@@ -22,6 +22,9 @@ class Index extends React.Component{
 
 			<Row id={"widgets-wrapper"}>
 				<DayTemperature xs={12} sm={12} md={12} lg={12} message={'today'}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'minimum temperature'} color={'rgb(130,130,130,1)'}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'maximum temperature'} color={'rgb(130,130,130,1)'}/>
+				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'average temperature'} color={'rgb(130,130,130,1)'}/>
                 <DayTemperature xs={6} sm={6} md={4} lg={4} message={'yesterday'}/>
 				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'two days ago'}/>
 				<DayTemperature xs={6} sm={6} md={4} lg={4} message={'three days ago'}/>

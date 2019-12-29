@@ -15,8 +15,8 @@ class DayTemperature extends Component {
         this.styles = {
             light: {
                 fontWeight: 100,
-                backgroundColor: "rgb(230,230,230,1)",
-                color: "black",
+                backgroundColor: props.color? props.color : "rgb(230,230,230,1)",
+                color: props.color? "white" : "black",
                 borderRadius: '0.2em',
                 border: 'none',
             }
