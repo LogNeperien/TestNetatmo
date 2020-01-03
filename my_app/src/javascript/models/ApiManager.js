@@ -3,6 +3,11 @@ import axios from 'axios'
 //use 'http://' or 'https://' fix the problem of cross-origin permission
 const API_URI = 'http://localhost:3030/my_api_dashbord_TWProject';
 
+const client_id = "5e008ff897d026518650315d";
+const client_secret = "YAUl7pjjnujR8cCIWp0ToHt8l1fqlVTs";
+const test_username = "votre_identifiant";
+const test_password = "votre_mot_de_passe";
+
 class ApiManager {
 
     // find all users

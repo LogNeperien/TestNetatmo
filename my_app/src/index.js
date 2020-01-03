@@ -10,15 +10,37 @@ import './stylesheets/App.css';
 import './stylesheets/index.css';
 
 class Index extends React.Component{
+
+	constructor(props) {
+        super(props);
+
+        this.state = {
+			bordereau : "STATION METEO NUMERO 15"
+        }
+
+        this.styles = {
+            light: {
+                fontWeight: 100,
+                backgroundColor: props.color? props.color : "rgb(230,230,230,1)",
+                color: props.color? "white" : "black",
+                borderRadius: '0.2em',
+                border: 'none',
+            }
+        }
+	}
 	
+	handleChangeBordereau = message => {
+		const bordereau = "STATION METEO NUMERO " + message.message;
+		this.setState({bordereau});
+	  }
 	
 	render () {	
 		return (
 		
 		<div>
-			<Header message={'STATION METEO NUMERO 15'}/>
+			<Header message={this.state.bordereau}/>
 
-			<ButtonStation/>
+			<ButtonStation handleSubmit={this.handleChangeBordereau}/>
 
 			<Row id={"widgets-wrapper"}>
 				<DayTemperature xs={12} sm={12} md={12} lg={12} message={'today'}/>
